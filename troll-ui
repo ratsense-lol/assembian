@@ -1,0 +1,100 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "assembian", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+function RobloxNotify(Ti,tab,icon,sec)
+    game.StarterGui:SetCore("SendNotification", {
+    Title = Ti,
+    Text = tab,
+    Icon = icon,
+    Duration = sec,
+    })
+end
+
+OrionLib:MakeNotification({
+    Name = "trolled",
+    Content = "lazy to do muhahahahah",
+    Image = "rbxassetid://6683744366",
+    Time = 5
+})
+
+local Tab = Window:MakeTab({
+    Name = "main",
+    Icon = "rbxassetid://6683744366",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "free ui no virus!",
+	Callback = function()
+      		RobloxNotify("free robux","fivemhax.org",nil,2)
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+    Name = "troll thingy",
+    Icon = "rbxassetid://6683744366",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "inf yield",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "dupe tool x4",
+	Callback = function()
+      		 for i=1,4 do
+           
+local block = Instance.new("Part")
+local bp = Instance.new("BodyPosition")
+block.CFrame = CFrame.new(9e9,9e9,9e9)
+block.Anchored = true
+local player = game.Players.LocalPlayer
+local character = player.Character
+local savepos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+for i,v in pairs(player.Backpack:GetChildren()) do
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = block.CFrame
+v.Parent = Character bp.Parent = v.Handle bp.Position = block.Position v.Handle.Velocity = Vector3.new(25.70,0,0) v.Handle.RotVelocity = Vector3.new(9e9,9e9,9e9)  v.Parent = game.Players.LocalPlayer.Backpack wait(1)   v.Parent = character task.wait(0)   v.Parent = workspace
+end
+character:ClearAllChildren()
+wait(7)
+for i,v in pairs(game.workspace:GetDescendants()) do
+       if v:IsA("Tool") and v:FindFirstChild("Handle") then
+           v.Handle.CanCollide = false
+           bp:Destroy()
+           v.Handle.RotVelocity = Vector3.new(0,0,0)
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savepos
+           v.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+           block:Destroy()
+       end
+     
+end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "bypass fly",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/WxmvCLLH'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "full bypass clientside",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/SmokeHubb/noob/main/noob",true))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "lagswitch {x}",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/SmokeHubb/lagswitch/main/main",true))();
+  	end    
+})
